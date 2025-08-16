@@ -37,6 +37,11 @@
 </head>
 
 <body class="index-page">
+  <style>
+    .modal-header, .modal-body, .modal-footer {
+      background-color: black;
+    }
+  </style>
 
   <header id="header" class="header dark-background d-flex flex-column justify-content-center">
     <i class="header-toggle d-xl-none bi bi-list"></i>
@@ -192,49 +197,7 @@
         </div>
       </div>
     </section>
-    
-    <!-- <section id="stats" class="stats section light-background">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
-            <div class="stats-wrapper">
-              <div class="stats-item" data-aos="zoom-in" data-aos-delay="150">
-                <div class="icon-wrapper">
-                  <i class="bi bi-emoji-smile"></i>
-                </div>
-                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Happy Clients</p>
-              </div>
-              
-              <div class="stats-item" data-aos="zoom-in" data-aos-delay="200">
-                <div class="icon-wrapper">
-                  <i class="bi bi-journal-richtext"></i>
-                </div>
-                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Projects</p>
-              </div>
-              
-              <div class="stats-item" data-aos="zoom-in" data-aos-delay="250">
-                <div class="icon-wrapper">
-                  <i class="bi bi-headset"></i>
-                </div>
-                <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Hours Of Support</p>
-              </div>
-              
-              <div class="stats-item" data-aos="zoom-in" data-aos-delay="300">
-                <div class="icon-wrapper">
-                  <i class="bi bi-people"></i>
-                </div>
-                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Hard Workers</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    
+
     <section id="skills" class="skills section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Skills</h2>
@@ -587,7 +550,7 @@
               <div class="filters-wrapper" data-aos="fade-right" data-aos-delay="150">
                 <ul class="portfolio-filters isotope-filters">
                   <li data-filter="*" class="filter-active">All Projects</li>
-                  <li data-filter=".filter-photography">Photography</li>
+                  <li data-filter=".filter-anggaran">Anggaran</li>
                   <li data-filter=".filter-design">Design</li>
                   <li data-filter=".filter-automotive">Automotive</li>
                   <li data-filter=".filter-skripsi">Skripsi</li>
@@ -597,16 +560,15 @@
 
             <div class="col-lg-9">
               <div class="row gy-4 portfolio-container isotope-container" data-aos="fade-up" data-aos-delay="200">
-                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-photography">
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-anggaran">
                   <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-portrait-1.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <img src="assets/portfolio/si - anggaran/1.png" class="img-fluid" alt="Portfolio Image" loading="lazy">
                     <div class="portfolio-info">
                       <div class="content">
-                        <span class="category">Photography</span>
-                        <h4>Capturing Moments</h4>
+                        <span class="category">Back Office App</span>
+                        <h4>Anggaran App</h4>
                         <div class="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-portrait-1.webp" class="glightbox" title="Capturing Moments"><i class="bi bi-plus-lg"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                          <a href="#" data-bs-toggle="modal" data-bs-target="#myModal" data-bs-img="anggaran" data-bs-title="Anggaran App" data-bs-category="Back Office App" data-bs-tech="PHP Laravel, HTML, Javascript, S3 File Uploaded" data-bs-db="SQL Server" data-bs-output="Generate Excel and PDF formats for activity submissions, User Ranking Feature which identifies those who participate in the most activities. Moreover, it provides aggregated data on activities and monthly activity graphs to help users easily analyze trends and participation levels." data-bs-description="Anggaran is a platform designed to simplify the management of budgets and the submission of activities within an organization or company. Used by the Ministry of Social Affairs, this application enables users to input various data, such as business trips (Perjadin), full-board expenses, and full-day meetings. Additionally, it offers several features that allow users to submit and manage contracts, contract archives, and activity requests like local transportation claims, speaker honorarium claims, overtime claims, and more.With Anggaran, administrative processes become more efficient, transparent, and organized." title="More Details"><i class="bi bi-arrow-right"></i></a>
                         </div>
                       </div>
                     </div>
@@ -692,20 +654,127 @@
                     </div>
                   </div>
                 </div>
-
-              </div><!-- End Portfolio Container -->
+              </div>
             </div>
           </div>
-
         </div>
-
       </div>
-
     </section>
   </main>
 
-  <footer id="footer" class="footer position-relative">
+  <!-- Add more content or details about the app -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Portfolio Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <section id="portfolio-details" class="portfolio-details section">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+              <div class="row gy-4">
+                <div class="col-lg-8">
+                  <div class="portfolio-details-slider swiper init-swiper">
+                    <script type="application/json" class="swiper-config">
+                      {
+                        "loop": true,
+                        "speed": 600,
+                        "autoplay": {
+                          "delay": 5000
+                        },
+                        "slidesPerView": "auto",
+                        "pagination": {
+                          "el": ".swiper-pagination",
+                          "type": "bullets",
+                          "clickable": true
+                        }
+                      }
+                    </script>
 
+                    <div class="swiper-wrapper align-items-center">
+                      <div class="swiper-slide">
+                        <img id="swiper-img-1" src="" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                      </div>
+                      <div class="swiper-slide">
+                        <img id="swiper-img-2" src="" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                      </div>
+                      <div class="swiper-slide">
+                        <img id="swiper-img-3" src="" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                      </div>
+                      <div class="swiper-slide">
+                        <img id="swiper-img-4" src="" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4">
+                  <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
+                    <h3>Project Information</h3>
+                    <ul>
+                      <li><strong>Category</strong>: <span id="category"></span></li>
+                      <li><strong>Technologies</strong>: <span id="tech"></span></li>
+                      <li><strong>Output App</strong>: <span id="output"></span></li>
+                      <li><strong>DBMS</strong>: <span id="db"></span></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+                    <h2>Project Overview</h2>
+                    <h5 id="description"></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var myModal = document.getElementById('myModal');
+      myModal.addEventListener('show.bs.modal', function (event) {
+        var button = event.relatedTarget;
+        var title = button.getAttribute('data-bs-title');
+        var category = button.getAttribute('data-bs-category');
+        var tech = button.getAttribute('data-bs-tech');
+        var db = button.getAttribute('data-bs-db');
+        var description = button.getAttribute('data-bs-description');
+        var output = button.getAttribute('data-bs-output');
+        var imgFolder = button.getAttribute('data-bs-img');
+        
+        var imgPaths = [
+          "assets/portfolio/si - " + imgFolder + "/1.png",
+          "assets/portfolio/si - " + imgFolder + "/2.png",
+          "assets/portfolio/si - " + imgFolder + "/3.png",
+          "assets/portfolio/si - " + imgFolder + "/4.png"
+        ];
+
+        for (let i = 0; i < imgPaths.length; i++) {
+          var imgElement = document.getElementById('swiper-img-' + (i + 1));
+          imgElement.src = imgPaths[i];
+        }
+
+        myModal.querySelector('.modal-title').textContent = 'Details ' + title;
+        myModal.querySelector('#category').textContent = category;
+        myModal.querySelector('#tech').textContent = tech;
+        myModal.querySelector('#output').textContent = output;
+        myModal.querySelector('#db').textContent = db;
+        myModal.querySelector('#description').textContent = description;
+      });
+    });
+  </script>
+
+  <footer id="footer" class="footer position-relative">
     <div class="container">
       <div class="copyright text-center ">
         <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
@@ -714,7 +783,6 @@
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
-
   </footer>
 
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
